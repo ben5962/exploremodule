@@ -1,0 +1,35 @@
+- prend une lib
+- affiche ses methodes et variables sous forme uml 
+
+méthode recherche (so) 
+  - module d inspection inspect pour filtrer fonctions :
+
+from inspect import getmembers, isfunction
+from monproj import momodule
+
+functions_list =  [ f for f in getmember(monmodule) if isfunction( f[1] ) ]
+// getmember renvoie une liste de tuples [("nom objet", <tpe d objet>). il est donc possible de remplacer isfunciton par tte  isxxx du module inspect. 
+
+
+  - modyle pydoc
+  - fonction help() dans l aide interactive
+  - dir(module) pour renvoyer fonctions ET variablkes 
+  - l outil en ligne de commande pydoc
+  - l'outil de génération d analyseur syntaxique ast
+  - un script à la con:
+
+import types
+import moduletruc 
+print [moduletruc.__dict__.get(a) for a in dir(moduletruc)]
+	if isinstance(moduletruc.__dict__.get(aà, types.FunctionType]
+
+
+sinon. besoin d'un navigateur ,d'un brouteur lancé par l'executable,
+qui affiche les noms de modules dans le path de python3
+dans un brouteur cliquable.
+chaque 
+
+
+
+python lister en cli les modules installes
+
